@@ -1,2 +1,2 @@
-# hw3
-home work assignment 3
+# CMPT140 Homework Assignment 3
+
