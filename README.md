@@ -1,2 +1,2 @@
-# CMPT140 Homework Assignment 3
+# CMPT140 Homework Assignment 6
 
