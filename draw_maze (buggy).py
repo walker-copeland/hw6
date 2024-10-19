@@ -125,12 +125,13 @@ def draw_maze_row(tt,row,x,y,block_width,block_height,maze_wall_color):
             # consecutive wall block
             num_wall = num_wall + 1
         else:
-            # if this is a wall block or this is the last column
             if int(row[i])==maze_wall:
+                # if this is a wall block and this is the last column
                 num_wall = num_wall + 1
             if num_wall > 0:
                 draw_block(tt,x,y,block_width * num_wall,block_height,maze_wall_color)
                 x = x + block_width * num_wall
+
             x = x + block_width
         tt.setx(x)
     y = y + block_height
@@ -139,8 +140,6 @@ def draw_maze_row(tt,row,x,y,block_width,block_height,maze_wall_color):
 
 if __name__ == '__main__':
     # create turtle object
-    # - we will use default turtle object, therefore, no need to create
-    # - default turtle object
     tt = turtle.Turtle()
 
     maze_fname = "C:\\Users\\samle\\OneDrive\\Documents\\twu\\cmpt140 (2024)\\hw\\hw6\\draw_maze\\maze_example_very_small.csv"
