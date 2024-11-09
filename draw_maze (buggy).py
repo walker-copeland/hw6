@@ -131,6 +131,7 @@ def draw_maze_row(tt,row,x,y,block_width,block_height,maze_wall_color):
             if num_wall > 0:
                 draw_block(tt,x,y,block_width * num_wall,block_height,maze_wall_color)
                 x = x + block_width * num_wall
+                num_wall=0
 
             x = x + block_width
         tt.setx(x)
